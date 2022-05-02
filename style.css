@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(224, 217, 217);
+    font-family: 'Lato', sans-serif;
+}
+.headerContainer {
+    height: 15vh;
+    display: flex;
+    align-content: center;
+    background-color: rgb(236, 90, 90);
+}
+
+.headerContainer > img {
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.inboxDisplayButton > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 8px;
+    margin-top: 5px;
+}
+
+.toDoListHeader {
+    margin-left: 15px;
+    margin-top: 25px;
+    font-family: 'Varela Round' , sans-serif;
+}
+
+
+.mainContent {
+    display: grid;
+    grid-template-columns: .5fr 3fr;
+    height: 85vh;
+}
+.listItemsContainer {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.listSidebar {
+    width: 20vw;
+    padding-left: 10px;
+    padding-right: 20px;
+    background-color: rgb(194, 187, 187);
+}
+.inboxDisplayButton {
+    margin-bottom: 50px;
+    margin-top: 15px;
+}
+.listSidebar > h1 {
+    margin-bottom: 25px;
+}
+.addNewProjectButton {
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.addNewProjectButton:hover{
+    background-color: #ddd;
+    border-radius: 5px;
+
+}
+.listSidebar > h2:hover {
+    cursor: pointer;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+.listSidebar > h2 {
+    padding: 5px;
+}
+
+.toDoListItemsHeader {
+    margin-top: 15px;
+}
+
+.toDoListItemsAddTask:hover {
+    cursor: pointer;
+    background-color: rgb(199, 194, 194);
+    border-radius: 5px;
+}
+
+.toDoListItemsAddTask {
+    width: 120px;
+    padding: 10px;
+}
+
+.toDoListItemsHeader, .toDoListItemsAddTask{
+    margin-bottom: 30px;
+}
+
+.toDoListItemsHeader, .toDoListItemsAddTask {
+    margin-left: 30px;
+}
+
+.inboxInput {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.inputFormSubmit, .projectAddButton {
+    margin-right: 20px;
+}
+
+.projectInput {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.inboxListItem, .projectListItem {
+    list-style-type: none;
+    padding-left: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.inboxListItem:hover, .projectListItem:hover {
+    cursor: pointer;
+    background: rgb(199, 194, 194);
+    border-radius: 5px;
+  
+}
+.dueDateAndX, .projectDueDateAndX {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+.editDueDateInput {
+    margin-right: 10px;
+}
+
+.newProjectTitle {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.projectListContainer {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 19vw;
+}
+.projectListContainer:hover {
+    background-color: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.projectTitleXButton {
+    cursor: pointer;
+}
+
+.addTitleEditButton, .addProjectTitleEditButton {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.projectIcon, .circleIcon {
+    height: 15px;
+    width: 15px;
+}
+.projectIcon {
+    margin-top: 5px;
+}
+
+.addProjectTitleButton, .cancelProjectTitleButton {
+    border: none;
+    margin: 5px;
+    border-radius: 5px;
+    width: 95px;
+    height: 30px;
+}
+.addProjectTitleButton:hover, .cancelProjectTitleButton:hover, .projectAddButton:hover, .inputFormSubmit:hover, .projectCancelButton:hover, .inputFormCancel:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+.addProjectTitleButton, .projectAddButton, .inputFormSubmit, .addTitleEditButton, .addProjectTitleEditButton {
+    background-color: rgb(89, 161, 89);
+}
+.cancelProjectTitleButton, .projectCancelButton, .inputFormCancel, .cancelTitleEditButton, .cancelProjectTitleEditButton {
+    background-color: rgb(223, 87, 116);
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.projectTitleInput {
+    height: 30px;
+    width: 200px;
+    margin-bottom: 5px;
+}
+
+.inboxInput, .projectInput, .editTitleInput {
+    height: 30px;
+    width: 200px;
+}
+.projectAddButton, .inputFormSubmit, .projectCancelButton, .inputFormCancel {
+    height: 30px;
+    width: 95px;
+    border: none;
+    border-radius: 5px;
+}   
+
+.addTitleEditButton, .cancelTitleEditButton, .addProjectTitleEditButton, .cancelProjectTitleEditButton {
+    height: 30px;
+    width: 90px;
+    border: none;
+    border-radius: 5px;
+}
+.addTitleEditButton:hover, .cancelTitleEditButton:hover, .addProjectTitleEditButton:hover, .cancelProjectTitleEditButton:hover {
+    cursor: pointer;
+}
+
+.inboxListTitleContainer, .projectListTitleContainer {
+    display: grid;
+    grid-template-columns: .1fr 2fr;
+    column-gap: 10px;
+    width: 500px;
+}
+.circleIcon {
+    margin-top: 5px;
+}
